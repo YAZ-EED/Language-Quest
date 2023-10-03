@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+body{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    /* min-height: 520px;
+    min-width: 787px; */
+    flex-direction: column-reverse;
+    gap: 5px;
+    background-color:#072E33;
+    color: white;
+}
+div{
+    min-width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+div:first-of-type span{
+    position: absolute;
+    top: 0;
+}
+div:first-of-type p{
+    border: 1px solid gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: move;
+    margin-top: 100px;
+}
+div:last-of-type p{
+    border: 1px solid gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+div:last-of-type article{
+    display: flex;
+    flex-direction: column;
+}
+div:last-of-type article span{
+    display: inline-block;
+    transform: rotate(90deg);
+    margin: 5px auto;
+}
+div:last-of-type div{
+    border: 1px solid;
+    border-radius: 10px;
+    height: 37px;
+    min-width: 100px;
+}
+div:last-of-type article div p{
+    height: 100%;
+    width: 100% !important;
+    border: none;
+    margin-top: 0;
+}
+button{
+    font-size: x-large;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+button:last-of-type{
+    display: none;
+}
+form{
+    margin-top: 15px;
+}
+label{
+    margin-right: 20px;
+}
